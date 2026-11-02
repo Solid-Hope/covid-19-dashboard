@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19 Early Outbreak Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Chart.js library (draws the graphs for us) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>COVID-19 Early Outbreak Dashboard (Feb–Mar 2020)</h1>
+
+  <!-- Dropdown Menu to Select Country -->
+  <label for="countrySelect">Select Country:</label>
+  <select id="countrySelect">
+    <option value="China">China</option>
+    <option value="Italy">Italy</option>
+    <option value="South Korea">South Korea</option>
+    <option value="US">United States</option>
+    <option value="South Africa">South Africa</option>
+  </select>
+
+  <!-- Metric Cards -->
+  <div class="metrics-container">
+    <div class="card">
+      <h3>Confirmed</h3>
+      <p id="totalConfirmed">0</p>
+    </div>
+    <div class="card">
+      <h3>Deaths</h3>
+      <p id="totalDeaths">0</p>
+    </div>
+    <div class="card">
+      <h3>Recovered</h3>
+      <p id="totalRecovered">0</p>
+    </div>
+    <div class="card">
+      <h3>Active Cases</h3>
+      <p id="activeCases">0</p>
+    </div>
+  </div>
+
+  <!-- Chart Display Areas -->
+  <div class="charts-container">
+    <div class="chart-box">
+      <h2>Cumulative Cases (Line Chart)</h2>
+      <canvas id="lineChart"></canvas>
+    </div>
+    <div class="chart-box">
+      <h2>Daily New Cases (Bar Chart)</h2>
+      <canvas id="barChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Connects your JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html><s>
+</s>
